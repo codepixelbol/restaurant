@@ -1,0 +1,276 @@
+/* ========================
+   Reset y configuración básica
+   ======================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ========================
+   Header (Barra de navegación)
+   ======================== */
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  position: sticky; /* Permanece en la parte superior al hacer scroll */
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease; /* Transición suave al hacer hover */
+}
+
+nav ul li a:hover {
+  color: #d4af37; /* Color dorado al hacer hover */
+}
+
+/* ========================
+   Sección de inicio
+   ======================== */
+
+#inicio {
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(to right, #fefae0, #f5ead6); /* Fondo degradado suave */
+  text-align: center;
+}
+
+#inicio h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#inicio p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+#inicio img {
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* ========================
+   Sección de menú
+   ======================== */
+
+#menu {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+#menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+#menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+}
+
+#menu li {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-width: 300px;
+  transition: transform 0.3s ease; /* Efecto de elevación al hacer hover */
+}
+
+#menu li:hover {
+  transform: translateY(-5px); /* Eleva el elemento al hacer hover */
+}
+
+#menu h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #d4af37;
+}
+
+#menu p {
+  color: #666;
+}
+
+#menu .precio {
+  font-weight: bold;
+  color: #333;
+}
+
+/* ========================
+   Sección de reservas
+   ======================== */
+
+#reservas {
+  padding: 4rem 2rem;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+#reservas h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+#reservas form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#reservas label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+#reservas input[type="text"],
+#reservas input[type="date"],
+#reservas input[type="time"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#reservas input[type="submit"] {
+  background-color: #d4af37;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#reservas input[type="submit"]:hover {
+  background-color: #c39d2d;
+}
+
+/* ========================
+   Pie de página
+   ======================== */
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer ul li a {
+  color: #d4af37;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+/* ========================
+   Responsive Design (Para pantallas pequeñas)
+   ======================== */
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #inicio h1 {
+    font-size: 2rem;
+  }
+
+  #inicio p {
+    font-size: 1rem;
+  }
+
+  #menu li {
+    width: 100%;
+  }
+}
+/* ========================
+   para logotipo
+   ======================== */
+
+
+/* Ajustar tamaño del logo */
+.logo img {
+  width: 80px;     /* Cambia este valor según lo que necesites */
+  height: 80px;    /* Puedes dejar height: auto; si prefieres proporción original */
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+/* Opcional: efecto hover para hacerlo más dinámico */
+.logo img:hover {
+  transform: scale(1.1);
+}
+
